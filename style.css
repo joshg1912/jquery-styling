@@ -2,14 +2,17 @@ body {
     margin: 10%;
 }
 
+.header {
+    text-align: center;
+}
 
 .picture-grid {
     height: 40vh;
-    gap: 15px;
+    gap: 50px;
 }
 
 .caption {
-    gap: 15px;
+    gap: 50px;
    
 }
 
@@ -21,8 +24,9 @@ body {
 
 
 .img-caption {
-    background-color: gray;
-    box-shadow: -15px 10px 5px black;
+    padding: 15px;
+    background-color: #d99a11;
+    box-shadow: -15px 10px 2px rgba(0,0,0, 0.5);
 }
 
 .img-caption:hover {
@@ -36,3 +40,4 @@ body {
     transition: 2s;
     box-shadow: -20px 10px 5px black;
 }
+
