@@ -19,7 +19,18 @@
     <div class="col img-caption">caption</div>
 </div>
 <script>
-    
+  let target1 = $("#one");
+  let target2 = $("#column-1");
+
+  console.log(target1);
+
+  target1.hover( function () {
+      $(target2).addClass('img-caption-hover');
+  }, function() {
+      $(target2).removeClass('img-caption-hover');
+  });
+
+
 </script>
 </body>
 </html>
