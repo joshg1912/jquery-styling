@@ -1,7 +1,6 @@
-
-  (function($) {
+(function($) {
     
-    let target1 = $('#1');
+    let target1 = $('#one');
     let target2 = $('#column-1');
 
     console.log(target1);
@@ -20,4 +19,7 @@
       ()=>{
       	target1.removeClass('blurred');
     });
-  })( jQuery );
+  });
+
+  $("#one").hide();
+  $(".col").hide();
