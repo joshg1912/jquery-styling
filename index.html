@@ -8,15 +8,15 @@
 <body>
 <div class="row picture-grid">
     <div class="col tile" id="one"></div>
-    <div class="col tile" id="2"></div>
-    <div class="col tile" id="3"></div>
-    <div class="col tile" id="4"></div>
+    <div class="col tile" id="two"></div>
+    <div class="col tile" id="three"></div>
+    <div class="col tile" id="four"></div>
 </div>
 <div class="row caption">
-    <div class="col img-caption" id="column-1">caption</div>
-    <div class="col img-caption"><p>caption</p></div>
-    <div class="col img-caption">caption</div>
-    <div class="col img-caption">caption</div>
+    <div class="col img-caption" id="column-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum esse sint voluptates voluptatibus unde possimus eius illum. Quia facilis tempore nesciunt accusantium, ducimus ipsa. Possimus quisquam reprehenderit accusantium sapiente dignissimos!</div>
+    <div class="col img-caption" id="column-2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta porro eligendi, accusamus natus voluptates. Voluptas at eveniet ipsam, rerum eum distinctio nostrum, delectus quo dignissimos totam et doloribus? Voluptatibus.</p></div>
+    <div class="col img-caption" id="column-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae laborum, quidem a unde, expedita necessitatibus eos cupiditate error recusandae quasi ipsa nesciunt voluptatum? Hic voluptate sequi, qui eos dolorum nihil!</div>
+    <div class="col img-caption" id="column-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla dolores cum, ullam eos nesciunt impedit unde aliquid natus maiores incidunt sapiente consequuntur necessitatibus deleniti nam, eligendi nobis suscipit quia.</div>
 </div>
 <script>
   let target1 = $("#one");
@@ -30,6 +30,29 @@
       $(target2).removeClass('img-caption-hover');
   });
 
+  let target3 = $("#two")
+  let target4 = $("#column-2")
+  target3.hover( function () {
+      $(target4).addClass('img-caption-hover');
+  }, function() {
+      $(target4).removeClass('img-caption-hover');
+  });
+
+  let target5 = $("#three")
+  let target6 = $("#column-3")
+  target5.hover( function () {
+      $(target6).addClass('img-caption-hover');
+  }, function() {
+      $(target6).removeClass('img-caption-hover');
+  });
+
+  let target7 = $("#four")
+  let target8 = $("#column-4")
+  target7.hover( function () {
+      $(target8).addClass('img-caption-hover');
+  }, function() {
+      $(target8).removeClass('img-caption-hover');
+  });
 
 </script>
 </body>
