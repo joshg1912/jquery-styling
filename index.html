@@ -65,8 +65,21 @@
   });
 
 
-  let photoHover = $('#bee-left');
-  console.log(photoHover);
+  let target9 = $('#bee-left');
+  let target10 = $('#bee-right');
+  console.log(target9);
+
+    target9.hover( function () {
+     $(target10).addClass('blurred');
+    }, function() {
+        $(target10).removeClass('blurred');
+    });
+    target10.hover(function () {
+        $(target9).addClass('blurred');
+    }, function() {
+        $(target9).removeClass('blurred');
+    });
+
 </script>
 </body>
 </html>

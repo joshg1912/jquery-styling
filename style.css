@@ -52,3 +52,8 @@ body {
 .row {
     column-gap: 20px;
 }
+
+.blurred {
+    filter:blur(4px);
+    transition: 1s;
+}
