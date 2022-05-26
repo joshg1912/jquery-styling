@@ -20,8 +20,12 @@
     <div class="col img-caption" id="column-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nulla dolores cum, ullam eos nesciunt impedit unde aliquid natus maiores incidunt sapiente consequuntur necessitatibus deleniti nam, eligendi nobis suscipit quia.</div>
 </div>
 <div class="row mt-5">
-    <div class="col earwig"><caption>This is a photo</caption></div>
-    <div class="col earwig"></div>
+    <div class="col earwig" id="bee-left"></div>
+    <div class="col earwig" id="bee-right"></div>
+</div>
+<div class="row">
+    <div class="col img-caption"><caption>This is a photo</caption></div>
+    <div class="col img-caption">This is a photo</div>
 </div>
 
 <script>
@@ -60,6 +64,9 @@
       $(target8).removeClass('img-caption-hover');
   });
 
+
+  let photoHover = $('#bee-left');
+  console.log(photoHover);
 </script>
 </body>
 </html>
