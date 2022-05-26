@@ -41,3 +41,14 @@ body {
     box-shadow: -20px 10px 5px black;
 }
 
+
+
+.earwig {
+    background-image: url("/assets/skyler-ewing-iihXxKsE4og-unsplash.jpg");
+    background-size: cover;
+    height: 40vh;
+}
+
+.row {
+    column-gap: 20px;
+}
